@@ -1,0 +1,121 @@
+╔════════════════════════════════════════════════════════════╗
+║                                                            ║
+║              🎓 STUDYHERO QUICK START 🎓                  ║
+║          AI Homework & Study Assistant                     ║
+║                                                            ║
+╚════════════════════════════════════════════════════════════╝
+
+📋 BEFORE YOU START:
+
+1. Install Docker Desktop from: https://www.docker.com/products/docker-desktop/
+2. Start Docker Desktop (look for green whale icon in system tray)
+3. Get Anthropic API key from: https://console.anthropic.com/
+
+🚀 EASY AUTOMATIC SETUP (RECOMMENDED):
+
+Open PowerShell in this folder and run:
+
+    .\setup-windows.ps1
+
+This will do everything for you!
+
+📖 MANUAL SETUP:
+
+1. Open PowerShell in this folder
+
+2. Copy environment file:
+   Copy-Item backend\.env.example backend\.env
+
+3. Edit backend\.env with Notepad:
+   notepad backend\.env
+
+   Add your Anthropic API key (replace the placeholder)
+
+4. Start the app:
+   docker-compose up -d
+
+5. Wait 2 minutes, then open:
+   http://localhost:8000/docs
+
+✅ VERIFY IT'S WORKING:
+
+Open your browser and go to:
+• http://localhost:8000       - Should show app status
+• http://localhost:8000/docs  - Interactive API documentation
+
+🛠️ USEFUL COMMANDS:
+
+View what's happening:
+  docker-compose logs -f
+
+Stop the app:
+  docker-compose down
+
+Restart the app:
+  docker-compose restart
+
+Start the app again:
+  docker-compose up -d
+
+Check if running:
+  docker-compose ps
+
+📱 MOBILE APP (OPTIONAL):
+
+If you want to run the mobile app too:
+
+1. Install Node.js from: https://nodejs.org/
+2. Open PowerShell in the 'frontend' folder
+3. Run: npm install
+4. Run: npx expo start
+
+📚 DOCUMENTATION:
+
+• WINDOWS_SETUP.md  - Detailed Windows guide
+• README.md         - Full documentation
+• DEPLOYMENT.md     - How to deploy to production
+
+🆘 TROUBLESHOOTING:
+
+Docker not starting?
+→ Make sure Docker Desktop is running (check system tray)
+
+Port 8000 in use?
+→ Run: docker-compose down
+→ Then: docker-compose up -d
+
+API not working?
+→ Check you added your Anthropic API key in backend\.env
+
+See errors:
+→ Run: docker-compose logs backend
+
+Start fresh:
+→ docker-compose down -v
+→ docker-compose up -d --build
+
+💡 WHAT CAN IT DO?
+
+✓ Scan homework with OCR
+✓ Solve math problems step-by-step
+✓ Help with science (physics, chemistry, biology)
+✓ Answer history questions
+✓ AI tutor chat
+✓ Generate practice quizzes
+✓ Create study notes and flashcards
+✓ Track progress with streaks and levels
+✓ And much more!
+
+🎯 NEXT STEPS:
+
+1. Get the app running (follow steps above)
+2. Open http://localhost:8000/docs
+3. Try the API endpoints
+4. Read WINDOWS_SETUP.md for detailed info
+5. Optionally set up the mobile app
+
+════════════════════════════════════════════════════════════
+
+Need help? Check WINDOWS_SETUP.md for detailed instructions!
+
+════════════════════════════════════════════════════════════
